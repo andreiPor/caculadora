@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--Link CSS-->
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <!--div principal-->
+    <div class="calculator">
+        <input type="text" id="pantalla" value="0">
+        <br>
+        <!--Los buttones-->
+        <div class="Buttons">
+            <button class="corto" onclick="Escribe('7')">7</button>
+            <button class="corto" onclick="Escribe('8')">8</button>
+            <button class="corto" onclick="Escribe('9')">9</button>
+            <button class="corto" id="operador" onclick="Escribe('*')">*</button>
+            <br>
+            <button class="corto" onclick="Escribe('4')">4</button>
+            <button class="corto" onclick="Escribe('5')">5</button>
+            <button class="corto" onclick="Escribe('6')">6</button>
+            <button class="corto" id="operador" onclick="Escribe('/')">/</button>
+            <br>
+            <button class="corto" onclick="Escribe('1')">1</button>
+            <button class="corto" onclick="Escribe('2')">2</button>
+            <button class="corto" onclick="Escribe('3')">3</button>
+            <button class="corto" id="operador" onclick="Escribe('+')">+</button>
+            <br>
+            <button class="corto" onclick="Escribe('.')">.</button>
+            <button class="corto" onclick="Escribe('0')">0</button>
+            <button class="corto" id="operador1" onclick="Reset()">AC</button>
+            <button class="corto" id="operador" onclick="Escribe('-')">-</button>
+    <br>
+    <div class="Calc">
+        <button class="largo" onclick="Calculate()">=</button>
+    </div>
+   
+        </div>
+    
+    </div>
+  <!--Link JavaScript-->
+    <script src="calculator.js"></script>
+   
+</body>
+
+</html>
